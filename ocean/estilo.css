@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin:10px;
+}
+body{
+    background-color: rgb(11, 134, 172);
+}
+.pagLogin{
+    display: inline-block;
+    max-width: 380px;
+    width: 70%;
+    background-color: #fff;
+    padding-top: 25px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:rgb(11, 134, 172);
+    font-weight: bolder;
+}
+a{
+    color: #000;
+}
+a:hover{
+    color: blue;
+}
+#email,#senha{
+    border-radius: 15px;
+    font-size: 1.1em;
+    padding:5px;
+    width: 250px;
+    border: gray 1px solid;
+}
+#submit{
+    width:265px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgb(11, 134, 172);
+    color: #fff;
+    border-radius: 25px;
+}
+img{
+    height: 50px;
+}
