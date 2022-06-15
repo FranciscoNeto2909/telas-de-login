@@ -100,7 +100,7 @@ a:hover {
 }
 
 @media (max-width:500px) {
-    .pagLogin {
+    .pagLogin-container{
         width: 100vw;
     }
 }

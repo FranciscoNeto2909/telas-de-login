@@ -14,8 +14,7 @@
             text-decoration: none;
         }
 
-        body,
-        .form-container,
+        body,.form-container,
         .form-link {
             display: flex;
             justify-content: center;
@@ -23,11 +22,19 @@
         }
 
         body {
+            text-align: center;
+            flex-direction: column;
             height: 100vh;
             width: 100vw;
             background-color: #12121a;
         }
-
+        .header{
+            margin-bottom: 20px;
+            text-align: centere;
+        }
+        .title, .resume{
+            color: #fff;
+        }
         .form-container,
         .form-link {
             border-radius: 5px;
@@ -37,6 +44,7 @@
         .form-container {
             height: 300px;
             width: 300px;
+            margin: auto;
             flex-direction: column;
             justify-content: space-evenly;
         }
@@ -58,11 +66,29 @@
             transform: rotate(90deg);
             font-size: 14px;
         }
+        @media (max-width:500px) {
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            .header{
+                margin: 0;
+            }
+            .form-container{
+                width: 100%;
+                margin: 0;
+                margin-bottom: 100px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <button class="back-button">V</button>
+    <header class="header">
+        <h1 class="title">Formulários</h1>
+        <p class="resume">Esses são alguns dos formulários que desenvolvi ao longo dos meus estudos</p>
+    </header>
     <div class="form-container">
         <a class="form-link" href="./galaxies/galaxies.html">formulário 1</a>
         <a class="form-link" href="./ocean/ocean.html">formulário 2</a>

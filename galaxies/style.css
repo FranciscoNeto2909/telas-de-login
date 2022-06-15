@@ -20,20 +20,19 @@ h1{
     display: flex;
     max-height: 400px;
     max-width: 600px;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid darkgray;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
-.leftSide{
-    margin-right: 30px;
+.rightSide{
     display: flex;
 }
-.leftSide img{
+.rightSide img{
     max-height:200px;
     max-width:200px;
     align-self: center;
 }
-.rightSide,form{
+.leftSide,form{
     display: flex;
     flex-direction: column;
 }
@@ -42,7 +41,6 @@ input{
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-
     font-size: 18px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0);
@@ -80,7 +78,10 @@ button{
     font-size: 14px;
 }
 @media(max-width:500px){
-    .leftSide img{
+    .container{
+        padding: 10px;
+    }
+    .rightSide img{
         max-height:150px;
         max-width:150px;
         align-self: center;

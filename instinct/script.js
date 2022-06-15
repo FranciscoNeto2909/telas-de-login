@@ -26,6 +26,7 @@ btn.addEventListener("click", (e) => {
         pass.style.border = "1px solid red"
         setTimeout(() => email.style.border = "", 2000);
     } else {
+        alert("Seja bem vindo")
         console.log(`Name:${name.value} Email:${email.value} Senha:${pass.value}`)
     }
 })
