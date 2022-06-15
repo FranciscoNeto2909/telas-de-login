@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    text-decoration: none;
 }
 body{
  height: 100vh;
@@ -65,6 +66,18 @@ button{
     margin-top: 40px;
     border:none;
     background-color:#fd951f;
+}
+.back-button{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+    color: #fff;
+    padding:8px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    font-size: 14px;
 }
 @media(max-width:500px){
     .leftSide img{

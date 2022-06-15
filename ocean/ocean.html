@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <form class="pagLogin">
+    <a class="back-button" href="../index.html">V</a>
+    <div class="pagLogin-container">
         <h1>Cadastrar</h1>
-        <input type="email" id="email" placeholder="Endereço de email">
-        <input type="password" id="senha" placeholder="Senha"> 
-        <br>
-        <input type="submit" id="submit" value="Enviar">
-        <br>
-        <a href="#">Equeceu a senha?</a>
-        <p id="p1">ou</p>
-        <p id="p2">Conecte-se atravez das redes</p>
-        <img src="https://marcas-logos.net/wp-content/uploads/2020/01/Facebook-logo-1-500x313.png" alt="Logo do Facebook">
-        <img src="https://i1.wp.com/dolitec.com.br/wp-content/uploads/2017/03/instagram-Logo-PNG-Transparent-Background-download-1.png" alt="Logo do instagram">
-    </form>
+        <form action="" class="pagLogin">
+            <input type="email" class="form-input" id="email" placeholder="Email">
+            <input type="password" class="form-input" id="senha" placeholder="password">
+            <input type="submit" id="submit" class="btn-submit" value="Enviar">
+        </form>
+        <div class="forget-pass">
+            <a href="#">Equeceu a senha?</a>
+            <p id="p1">ou</p>
+            <p id="p2">Conecte-se atravez das redes</p>
+        </div>
+        <div class="social-container">
+            <img src="https://i1.wp.com/dolitec.com.br/wp-content/uploads/2017/03/instagram-Logo-PNG-Transparent-Background-download-1.png"
+                alt="Logo do instagram" class="social social--insta">
+            <img src="https://marcas-logos.net/wp-content/uploads/2020/01/Facebook-logo-1-500x313.png"
+                alt="Logo do Facebook" class="social">
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
