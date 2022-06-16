@@ -68,15 +68,25 @@ label{
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.664);
 }
-button{
+.login-button{
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
     padding: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
+    font-size: 16px;
     border:none;
     background-color:#6B50A9;
+}
+.login-button:hover{
+    background-color:#7a5ac4;
+}
+.forgot, .register{
+    margin-top: 15px;
+}
+.link:hover{
+    color: #9EDDEF;
 }
 .back-button{
     position: absolute;
