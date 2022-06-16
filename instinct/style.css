@@ -93,7 +93,7 @@ a{
         font-size: 15px;
     }
     .container{
-        width: 100vw;
+        width: 90%;
         justify-content: space-between;
     }
     .form{
