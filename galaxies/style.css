@@ -17,9 +17,9 @@ body{
 .container{
     display: flex;
     position: relative;
-    margin: auto 0;
-    max-height: 400px;
-    max-width: 600px;
+    margin-top: 50px;
+    height: 450px;
+    width: 600px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -32,14 +32,25 @@ body{
     top: 10px;
     left: 40%;
 }
+.leftSide, .rightSide{
+    margin-top: 45px;
+}
+.leftSide{
+    width: 60%;
+}
+form{
+    height: 100%;
+    justify-content: space-evenly;
+}
 .rightSide{
     display: flex;
+    overflow: hidden;
 }
 .rightSide img{
-    max-height:200px;
-    max-width:200px;
-    margin-top: 50px;
-    margin-left: 20px;
+    height:200px;
+    width:200px;
+    margin-top: 30px;
+    margin-left: 30px;
     align-self: center;
     transform: rotate(-30deg);
 }
@@ -104,10 +115,7 @@ label{
     .container{
         padding: 10px;
         width: 90%;
-        height: 300px;
-    }
-    .rightSide{
-        overflow: hidden;
+        height: 350px;
     }
     .title{
         margin-top: 100px;
@@ -124,5 +132,12 @@ label{
         max-width:150px;
         margin: 0;
         align-self: center;
+    }
+    .login-button{
+        margin-top: 20px;
+    }
+    .forgot, .register{
+        margin-top: 10px;
+        font-size: 15px;
     }
 } 
