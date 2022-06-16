@@ -10,7 +10,6 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(11, 134, 172);
@@ -26,17 +25,19 @@ body {
     background-color: #fff;
     border-radius: 5px;
 }
+
 .pagLogin{
-    height: 160px;
+    height: 170px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-h1 {
+.title {
     color: rgb(11, 134, 172);
     font-weight: bolder;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 a {
@@ -50,9 +51,9 @@ a:hover {
     align-self: flex-start;
 }
 .form-input {
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 1.1em;
-    padding: 5px;
+    padding: 8px 15px;
     width: 280px;
     margin-bottom: 15px;
     border: gray 1px solid;
@@ -63,7 +64,7 @@ a:hover {
 }
 .btn-submit {
     width: 280px;
-    height: 40px;
+    height: 42px;
     font-size: 1em;
     font-weight: bold;
     background-color: rgb(11, 134, 172);
@@ -85,6 +86,7 @@ a:hover {
 }
 .social--insta{
     width: 50px;
+    margin-bottom: 10px;
 }
 .back-button {
     position: absolute;
@@ -101,6 +103,8 @@ a:hover {
 
 @media (max-width:500px) {
     .pagLogin-container{
-        width: 100vw;
+        width: 90%;
+        margin-right: 10px;
+        align-self: center;
     }
 }

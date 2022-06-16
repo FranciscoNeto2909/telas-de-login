@@ -27,8 +27,8 @@ const validator = {
        
         setTimeout(() => {
             input.style.border = "none"
-            input.style.borderBottom = "1px solid #fd951f"
-            errorElement.style.display = "none"
+            input.style.borderBottom = "1px solid #F770A8"
+            errorElement.remove()
         }, 2000)
     }
 }
