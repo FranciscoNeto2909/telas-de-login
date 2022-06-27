@@ -27,6 +27,9 @@ body{
     display: flex;
     align-items: center;
 }
+.form, .logo{
+    margin-top: 50px;
+}
 .form{
     width: 50%;
     padding-right: 5px;
@@ -108,7 +111,6 @@ a{
     }
     .form{
         width: 60%;
-        margin-top: 50px;
     }
     img{
         height: 120px;
