@@ -26,6 +26,7 @@ body{
 }
 .title{
     margin-top: 20px;
+    text-align: center;
 }
 .form-title{
     position: absolute;
@@ -113,23 +114,24 @@ label{
 }
 @media(max-width:500px){
     .container{
-        padding: 10px;
+        padding: 5px;
         width: 90%;
-        height: 350px;
+        height: 360px;
+        justify-content: space-between;
     }
     .title{
         margin-top: 100px;
     }
     .leftSide{
-        width: 63%;
+        width: 60%;
     }
     form{
         height: 100%;
         justify-content: space-evenly;
     }
     .rightSide img{
-        max-height:150px;
-        max-width:150px;
+        max-height:120px;
+        max-width: 120px;
         margin: 0;
         align-self: center;
     }

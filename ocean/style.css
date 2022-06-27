@@ -54,7 +54,6 @@ a:hover {
     border-radius: 25px;
     font-size: 1.1em;
     padding: 8px 15px;
-    width: 280px;
     margin-bottom: 15px;
     border: gray 1px solid;
 }
@@ -63,7 +62,7 @@ a:hover {
     font-size: 14px;
 }
 .btn-submit {
-    width: 280px;
+    width: 250px;
     height: 42px;
     font-size: 1em;
     font-weight: bold;
@@ -83,6 +82,9 @@ a:hover {
 .social {
     height: 50px;
     width: 80px;
+}
+.social:hover{
+    cursor: pointer;
 }
 .social--insta{
     width: 50px;
