@@ -26,7 +26,10 @@ btn.addEventListener("click", (e) => {
         pass.style.border = "1px solid red"
         setTimeout(() => email.style.border = "", 2000);
     } else {
-        alert("Seja bem vindo")
+        document.querySelector(".wellcome").style.display = "block"
+        setTimeout(() => {
+            document.querySelector(".wellcome").style.display = "none"
+        }, 1500);
         console.log(`Name:${name.value} Email:${email.value} Senha:${pass.value}`)
     }
 })
