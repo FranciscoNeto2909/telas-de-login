@@ -3,8 +3,7 @@ const email = document.querySelector('#email')
 const pass = document.querySelector('#pass')
 
 const btn = document.querySelector('#button')
-btn.addEventListener("click", (e) => {
-    e.preventDefault()
+btn.addEventListener("click", () => {
     if (name.value === "") {
         name.style.border = "1px solid red"
         setTimeout(() => name.style.border = "", 2000);

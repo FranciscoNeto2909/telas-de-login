@@ -80,6 +80,7 @@ input{
     width: 100%;
     font-size: 18px;
     padding: 10px;
+    margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 1px solid #F770A8;
@@ -90,7 +91,6 @@ input:focus{
     background-color: transparent;
 }
 label{
-    margin-top: 25px;
     color: rgba(255, 255, 255, 0.664);
 }
 .login-button{
@@ -109,6 +109,9 @@ label{
 }
 .forgot, .register{
     margin-top: 15px;
+}
+.link{
+    color:#6B50A9;
 }
 .link:hover{
     color: #9EDDEF;
@@ -129,22 +132,31 @@ label{
     .container{
         padding: 5px;
         width: 90%;
-        height: 360px;
-        justify-content: space-between;
+        height: 480px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .link:hover{
+        color:#6B50A9;
     }
     .title{
         margin-top: 100px;
     }
     .leftSide{
-        width: 60%;
+        width: 80%;
+        margin-top: 0;
     }
     form{
         height: 100%;
+        margin-bottom: 10px;
         justify-content: space-evenly;
     }
+    .rightSide{
+        margin: 0;
+    }
     .rightSide img{
-        max-height:120px;
-        max-width: 120px;
+        height:140px;
+        width: 140px;
         margin: 0;
         align-self: center;
     }

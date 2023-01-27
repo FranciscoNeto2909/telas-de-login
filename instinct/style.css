@@ -9,7 +9,7 @@ body{
     background-image: url("http://canoinhascrossfit.com/wp-content/uploads/2017/06/fenix-vermelha.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: center;
+    background-position: center;
     color: #fff;
     height: 100vh;
     width: 100vw;
@@ -24,7 +24,7 @@ body{
     width: 300px;
     text-align: center;
     border-radius: 5px;
-    background-color:#38393fa2;
+    background-color:#38393f00;
     display: none;
 }
 .wellcome-text{
@@ -35,7 +35,7 @@ body{
     width: 550px;
     padding: 10px;
     position: relative;
-    background-color: #36393ffb;
+    background-color: #36393fee;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -116,16 +116,19 @@ a{
         font-size: 15px;
     }
     .container{
+        height: 320px;
         width: 90%;
-        justify-content: space-between;
+        flex-direction: column-reverse;
     }
     .header{
         left: 10px;
     }
     .form{
-        width: 60%;
+        margin-top: 0;
+        width: 70%;
     }
     img{
+        display: none;
         height: 120px;
     }
     .forgot, .login{
