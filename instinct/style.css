@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     background-color: #000;
     background-image: url("http://canoinhascrossfit.com/wp-content/uploads/2017/06/fenix-vermelha.png");
     background-repeat: no-repeat;
@@ -17,20 +18,23 @@ body{
     justify-content: center;
     align-items: center;
 }
-.wellcome{
+
+.wellcome {
     position: absolute;
     top: 50px;
     padding: 10px 20px;
     width: 300px;
     text-align: center;
     border-radius: 5px;
-    background-color:#38393f00;
+    background-color: #38393f00;
     display: none;
 }
-.wellcome-text{
+
+.wellcome-text {
     color: #fff;
 }
-.container{
+
+.container {
     height: 370px;
     width: 550px;
     padding: 10px;
@@ -40,31 +44,38 @@ body{
     display: flex;
     align-items: center;
 }
-.form, .logo{
+
+.form,
+.logo {
     margin-top: 50px;
 }
-.form{
+
+.form {
     width: 50%;
     padding-right: 5px;
 }
-.header{
+
+.header {
     text-align: center;
     position: absolute;
     top: 5px;
     left: 55px;
 }
-.header p{
+
+.header p {
     font-size: .85rem;
     color: rgb(185, 185, 185);
 }
-label{
+
+label {
     color: white;
     display: block;
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: .75rem;
     font-weight: bold;
 }
-input{
+
+input {
     width: 100%;
     height: 25px;
     background-color: #313339;
@@ -73,65 +84,81 @@ input{
     outline: none;
     margin-bottom: 5px;
 }
-button{
-    padding: 5px;
+
+button {
+    padding: 8px 5px;
     width: 100%;
-    margin-top: 10px;
+    margin: 10px 0;
     background-color: rgb(120, 64, 209);
     color: #fff;
     border: 2px solid #000;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     background-color: rgb(104, 50, 192);
 }
-button:active{
+
+button:active {
     border: 2px solid rgb(104, 50, 192);
 }
-img{
+
+img {
     height: 250px;
     margin-top: 20px;
 }
-.forgot{
+
+.forgot {
     margin-top: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(0, 119, 255);
 }
-.back-button{
+
+.back-button {
     position: absolute;
     left: 10px;
     top: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 0;
     color: #fff;
-    padding:8px;
+    padding: 8px;
     border-radius: 5px;
     transform: rotate(90deg);
     font-size: 14px;
 }
-@media(max-Width:500px){
-    *{
-        font-size: 15px;
-    }
-    .container{
-        height: 320px;
+
+@media(max-Width:500px) {
+    .container {
         width: 90%;
         flex-direction: column-reverse;
     }
-    .header{
+
+    .header {
         left: 10px;
     }
-    .form{
+
+    .form {
         margin-top: 0;
-        width: 70%;
+        width: 90%;
+        display: flex;
+        gap: 10px;
     }
-    img{
+
+    input {
+        padding: 12px 4px;
+        margin: 0;
+    }
+
+    img {
         display: none;
         height: 120px;
     }
-    .forgot, .login{
+
+    .forgot,
+    .login {
         font-size: 13px;
     }
 }

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,28 +6,32 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
- height: 100vh;
- width: 100vw;
- display: flex;
- flex-direction: column;
- align-items: center;
- background-color: #130f0d; 
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #130f0d;
 }
-.wellcome{
+
+.wellcome {
     position: absolute;
     top: 50px;
     padding: 10px 20px;
     width: 300px;
     text-align: center;
     border-radius: 5px;
-    background-color:rgba(107, 80, 169, 0.5);
+    background-color: rgba(107, 80, 169, 0.5);
     display: none;
 }
-.wellcome-text{
+
+.wellcome-text {
     color: #fff;
 }
-.container{
+
+.container {
     display: flex;
     position: relative;
     margin-top: 50px;
@@ -37,45 +41,56 @@ body{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
-.title{
+
+.title {
     margin-top: 20px;
     text-align: center;
 }
-.form-title{
+
+.form-title {
     position: absolute;
     top: 10px;
     left: 40%;
 }
-.leftSide, .rightSide{
+
+.leftSide,
+.rightSide {
     margin-top: 45px;
 }
-.leftSide{
+
+.leftSide {
     width: 60%;
 }
-form{
+
+form {
     height: 100%;
     justify-content: space-evenly;
 }
-.rightSide{
+
+.rightSide {
     display: flex;
     overflow: hidden;
 }
-.rightSide img{
-    height:200px;
-    width:200px;
+
+.rightSide img {
+    height: 200px;
+    width: 200px;
     margin-top: 30px;
     margin-left: 30px;
     align-self: center;
     transform: rotate(-30deg);
 }
-.leftSide,form{
+
+.leftSide,
+form {
     display: flex;
     flex-direction: column;
 }
-input{
+
+input {
     -moz-appearance: none;
     -webkit-appearance: none;
-    -webkit-autofill:none;
+    -webkit-autofill: none;
     appearance: none;
     width: 100%;
     font-size: 18px;
@@ -85,15 +100,18 @@ input{
     border: none;
     border-bottom: 1px solid #F770A8;
 }
-input:focus{
+
+input:focus {
     border-radius: none;
     outline: none;
     background-color: transparent;
 }
-label{
+
+label {
     color: rgba(255, 255, 255, 0.664);
 }
-.login-button{
+
+.login-button {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -101,70 +119,90 @@ label{
     padding: 15px;
     margin-top: 30px;
     font-size: 16px;
-    border:none;
-    background-color:#6B50A9;
+    border: none;
+    background-color: #6B50A9;
 }
-.login-button:hover{
-    background-color:#7a5ac4;
+
+.login-button:hover {
+    background-color: #7a5ac4;
 }
-.forgot, .register{
+
+.forgot,
+.register {
     margin-top: 15px;
 }
-.link{
-    color:#6B50A9;
+
+.link {
+    color: #6B50A9;
 }
-.link:hover{
+
+.link:hover {
     color: #9EDDEF;
 }
-.back-button{
+
+.back-button {
     position: absolute;
     left: 10px;
     top: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 0;
     color: #fff;
-    padding:8px;
+    padding: 8px;
     border-radius: 5px;
     transform: rotate(90deg);
     font-size: 14px;
 }
-@media(max-width:500px){
-    .container{
+
+@media(max-width:500px) {
+    .container {
         padding: 5px;
         width: 90%;
-        height: 480px;
         align-items: center;
         flex-direction: column-reverse;
     }
-    .link:hover{
-        color:#6B50A9;
+
+    .link:hover {
+        color: #6B50A9;
     }
-    .title{
+
+    .title {
         margin-top: 100px;
     }
-    .leftSide{
-        width: 80%;
+
+    .leftSide {
+        width: 90%;
         margin-top: 0;
     }
-    form{
+
+    form {
         height: 100%;
+        width: 100%;
         margin-bottom: 10px;
         justify-content: space-evenly;
+        gap: 10px;
     }
-    .rightSide{
+
+    .rightSide {
         margin: 0;
     }
-    .rightSide img{
-        height:140px;
-        width: 140px;
-        margin: 0;
-        align-self: center;
+
+    .rightSide img {
+        height: 50%;
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+        top: 20%;
+        right: 22%;
+        opacity: 40%;
     }
-    .login-button{
+
+    .login-button {
         margin-top: 20px;
     }
-    .forgot, .register{
+
+    .forgot,
+    .register {
         margin-top: 10px;
         font-size: 15px;
     }
-} 
+}
