@@ -13,7 +13,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #130f0d;
+    background-image: url("https://img.freepik.com/fotos-premium/imagem-mistica-do-espaco-sideral-novo-mundo-nao-descoberto-o-espaco-roxo-comeca_146482-8594.jpg?w=974");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wellcome {
@@ -38,8 +40,8 @@ body {
     height: 450px;
     width: 600px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    background-color: #130f0db6;
 }
 
 .title {
@@ -98,7 +100,7 @@ input {
     margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-bottom: 1px solid #F770A8;
+    border-bottom: 1px solid #9442B3;
 }
 
 input:focus {
@@ -120,11 +122,11 @@ label {
     margin-top: 30px;
     font-size: 16px;
     border: none;
-    background-color: #6B50A9;
+    background-color: #5D1BBD;
 }
 
 .login-button:hover {
-    background-color: #7a5ac4;
+    background-color:#5D1BCE;
 }
 
 .forgot,

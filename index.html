@@ -13,14 +13,15 @@
             box-sizing: border-box;
             text-decoration: none;
         }
-        
-        body,.form-container,
-        .form-link {
+
+        body,
+        .container,
+        .card {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         body {
             text-align: center;
             flex-direction: column;
@@ -28,57 +29,125 @@
             width: 100vw;
             background-color: #12121a;
         }
-        .header{
+
+        .header {
             margin-bottom: 20px;
             text-align: centere;
         }
-        .title, .resume{
+
+        .title,
+        .resume {
             color: #fff;
         }
-        .form-container,
-        .form-link {
+
+        .card {
             border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        .form-container {
-            height: 300px;
-            width: 300px;
+        .container {
+            min-height: 500px;
+            width: 90%;
+            gap: 10px;
+            padding: 10px;
             margin: auto;
-            flex-direction: column;
             justify-content: space-evenly;
+            flex-wrap: wrap;
         }
 
-        .form-link {
-            height: 50px;
-            width: 80%;
+        .card {
+            flex-direction: column;
+            height: 250px;
+            width: 90%;
             color: #fff;
         }
-        .back-button{
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 500ms all ease-in-out;
+        }
+
+        .card-img {
+            width: 90%;
+            height: 50%;
+        }
+
+        .card-text {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .card-text--galaxies {
+            color: #F770A8;
+        }
+
+        .card--galaxies {
+            background-image: url("https://img.freepik.com/fotos-premium/imagem-mistica-do-espaco-sideral-novo-mundo-nao-descoberto-o-espaco-roxo-comeca_146482-8594.jpg");
+            background-size: cover;
+        }
+
+        .card-img--glaxies {
+            height: 130px;
+            width: 130px;
+            transform: rotate(-30deg);
+        }
+
+        .card--ocean {
+            background-image: url("./images/ocean.jpg");
+            background-size: cover;
+        }
+
+        .card--instinct{
+           background-image: url("https://1hitgames.com/wp-content/uploads/2022/01/5bf260d7ebddba7d0ce5756108e332b8f46cfebd_00.jpg");
+           background-size: cover;
+           background-repeat: no-repeat;
+        }
+
+        .card-ocean-text {
+            margin-top: 135px;
+        }
+        .card-text--instinct{
+            margin-top: 135px;
+            color: #DADED8;
+            text-shadow: 0 0 2px #000;
+        }
+
+        .card-img--instinct{
+            width: 50%;
+        }
+
+        .back-button {
             position: absolute;
             left: 10px;
             top: 10px;
             background-color: rgba(255, 255, 255, 0.1);
             border: 0;
             color: #fff;
-            padding:8px;
+            padding: 8px;
             border-radius: 5px;
             transform: rotate(90deg);
             font-size: 14px;
         }
+
         @media (max-width:500px) {
-            body{
+            body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
             }
-            .header{
+
+            .header {
                 margin: 0;
             }
-            .form-container{
+
+            .container {
+                overflow-y: scroll;
                 width: 100%;
-                margin: 0;
-                margin-bottom: 100px;
+            }
+
+            .card:hover{
+                transform: scale(1);
             }
         }
     </style>
@@ -89,11 +158,17 @@
         <h1 class="title">Formulários</h1>
         <p class="resume">Esses são alguns dos formulários que desenvolvi ao longo dos meus estudos</p>
     </header>
-    <div class="form-container">
-        <a class="form-link" href="./galaxies/galaxies.html">Galaxies</a>
-        <a class="form-link" href="./ocean/ocean.html">Ocean</a>
-        <a class="form-link" href="./instinct/instinct.html">Instinct</a>
-        <a class="form-link" href="">Em breve...</a>
+    <div class="container">
+        <a class="card card--galaxies" href="./galaxies/galaxies.html">
+            <img src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-desenho-de-astronauta-espacial.png"
+                class="card-img card-img--glaxies" alt="">
+            <span class="card-text card-text--galaxies">Galaxies</span>
+        </a>
+        <a class="card card--ocean" href="./ocean/ocean.html">
+            <span class="card-text card-ocean-text">Ocean</span>
+        </a>
+        <a class="card card--instinct" href="./instinct/instinct.html">
+            <span class="card-text card-text--instinct">Instinct</span>
+        </a>
+        <a class="card" href="">Em breve...</a>
     </div>
-
-</html>
