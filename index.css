@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+.container,
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #12121a;
+}
+
+.header {
+    padding-top: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.title,
+.resume {
+    color: #fff;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    height: auto;
+    gap: 10px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.card {
+    flex-direction: column;
+    height: 300px;
+    width:260px;
+    color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 500ms all ease-in-out;
+}
+
+.card-img {
+    width: 90%;
+    height: 50%;
+}
+
+.card-text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-text--galaxies {
+    color: #F770A8;
+}
+
+.card--galaxies {
+    background-image: url("https://img.freepik.com/fotos-premium/imagem-mistica-do-espaco-sideral-novo-mundo-nao-descoberto-o-espaco-roxo-comeca_146482-8594.jpg");
+    background-size: cover;
+}
+
+.card-img--glaxies {
+    height: 130px;
+    width: 130px;
+    transform: rotate(-30deg);
+}
+
+.card--ocean {
+    background-image: url("./images/ocean.jpg");
+    background-size: cover;
+}
+
+.card--instinct{
+   background-image: url("https://1hitgames.com/wp-content/uploads/2022/01/5bf260d7ebddba7d0ce5756108e332b8f46cfebd_00.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.card-ocean-text {
+    margin-top: 135px;
+}
+.card-text--instinct{
+    margin-top: 135px;
+    color: #DADED8;
+    text-shadow: 0 0 2px #000;
+}
+
+.card-img--instinct{
+    width: 50%;
+}
+
+.back-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    font-size: 14px;
+}
+
+@media (max-width:500px) {
+    .card{
+        width: 300px;
+    }
+    .card:hover{
+        transform: scale(1);
+    }
+}

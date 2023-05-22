@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("https://img.freepik.com/fotos-premium/imagem-mistica-do-espaco-sideral-novo-mundo-nao-descoberto-o-espaco-roxo-comeca_146482-8594.jpg?w=974");
+    background-image: url("../images/galaxies.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

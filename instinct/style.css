@@ -128,9 +128,15 @@ a {
 }
 
 @media(max-Width:500px) {
+    body {
+        background-position: -380px;
+    }
     .container {
         width: 90%;
-        flex-direction: column-reverse;
+        margin: 0 auto;
+        height: 50%;
+        border-radius: 6px;
+        padding: 16px;
     }
 
     .header {
@@ -138,8 +144,8 @@ a {
     }
 
     .form {
-        margin-top: 0;
-        width: 90%;
+        margin: 0;
+        padding: 0;
         display: flex;
         gap: 10px;
     }
